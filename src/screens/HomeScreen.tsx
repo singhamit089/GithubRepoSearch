@@ -21,7 +21,7 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async () => {
-    if (!query.trim()) return;
+    if (!query.trim()) { return; }
     setLoading(true);
     try {
       const results = await GitHubAPIManager.searchRepos(query);

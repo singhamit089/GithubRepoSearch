@@ -5,9 +5,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '@screens/HomeScreen';
 import RepoDetailScreen from '@screens/RepoDetailScreen';
 
+import { GitHubRepo } from '@models/GitHubRepo';
+
 export type RootStackParamList = {
   Home: undefined;
-  RepoDetail: { repo: any }; // Replace 'any' with a proper model later
+  RepoDetail: { repo: GitHubRepo };
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();

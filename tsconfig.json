@@ -3,10 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@screens/*": ["src/screens/*"],
-      "@components/*": ["src/components/*"],
       "@managers/*": ["src/managers/*"],
-      "@models/*": ["src/models/*"]
+      "@models/*": ["src/models/*"],
+      "@screens/*": ["src/screens/*"],
+      "@components/*": ["src/components/*"]
     }
   }
 }
